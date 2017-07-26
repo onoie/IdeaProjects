@@ -1,0 +1,41 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://primefaces.org/ui" xmlns:pe="http://primefaces.org/ui/extensions" xmlns:ui="http://xmlns.jcp.org/jsf/facelets" template="/templates/init.xhtml">
+
+    <ui:define name="title">xtime</ui:define>
+
+    <ui:define name="first">
+        <!--
+         _____ ___  __  __  _   __   __    __   __  _   __ _____
+        |_   _| _ \/  \|  \| |/' _/ /  \ /' _//' _/| |/' _/_   _|
+          | | | v / /\ | | ' |`._`.| /\ |`._`.`._`.| |`._`. | |
+          |_| |_|_\_||_|_|\__||___/|_||_||___/|___/|_||___/ |_|
+        -->
+    </ui:define>
+
+    <ui:define name="middle">
+        <link rel="stylesheet" type='text/css' href="#{request.contextPath}/webjars/font-awesome/4.6.2/css/font-awesome.min.css"/>
+        <script type="text/javascript" src="#{request.contextPath}/webjars/holderjs/2.5.2/holder.min.js"></script>
+        <h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+        <h:outputScript library="primefaces" name="jquery/jquery-plugins.js" target="head" />
+    </ui:define>
+
+    <ui:define name="last"></ui:define>
+
+    <ui:define name="headers">
+        <header style="position: fixed;left: 0;top: 0;padding: 5px 10px;"><small><script>
+            document.write(new Date().toLocaleString());
+        </script></small></header>
+    </ui:define>
+
+    <ui:define name="contents">
+        <h:form style="padding: 30px;">
+            <ui:insert name="content"/>
+        </h:form>
+    </ui:define>
+
+    <ui:define name="footers">
+        <footer style="position: fixed;right: 0;bottom: 0;padding: 5px 10px;">
+            <small><i class="fa fa-aw fa-copyright"/> Copyright 2015-<script>document.write(new Date().getFullYear());</script>, TransAssist</small>
+        </footer>
+    </ui:define>
+
+</ui:composition>

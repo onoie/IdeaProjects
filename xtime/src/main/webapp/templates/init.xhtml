@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:ui="http://xmlns.jcp.org/jsf/facelets" >
+    <f:view>
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title><ui:insert name="title">Index</ui:insert></title>
+                <!--facet_first_start-->
+                <ui:insert name="first"/>
+                <!--facet_first_end-->
+            </f:facet>
+            <f:facet name="middle">
+                <!--facet_middle_start-->
+                <ui:insert name="middle"/>
+                <!--facet_middle_end-->
+            </f:facet>
+            <f:facet name="last">
+                <!--facet_last_start-->
+                <ui:insert name="last"/>
+                <!--facet_last_end-->
+            </f:facet>
+        </h:head>
+        <h:body style="width: 100%;height: 100%;margin: 0px;padding: 0px;">
+            <!--facet_header_start-->
+            <ui:insert name="headers"/>
+            <!--facet_header_end-->
+            <!--facet_contents_start-->
+            <ui:insert name="contents"/>
+            <!--facet_contents_end-->
+            <!--facet_footer_start-->
+            <ui:insert name="footers"/>
+            <!--facet_footer_end-->
+            <ui:debug hotkey="x"></ui:debug>
+        </h:body>
+    </f:view>
+</html>
