@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="xlibrary">
+    <output-path>$PROJECT_DIR$/out/artifacts/xlibrary</output-path>
+    <root id="archive" name="xlibrary.jar">
+      <element id="module-output" name="xlibrary" />
+    </root>
+  </artifact>
+</component>
