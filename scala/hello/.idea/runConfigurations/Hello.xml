@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Hello" type="ScalaScriptRunConfiguration" factoryName="Scala Script" singleton="true">
+    <module name="hello" />
+    <setting name="path" value="$PROJECT_DIR$/Hello.scala" />
+    <setting name="vmparams" value="" />
+    <setting name="consoleargs" value="" />
+    <setting name="params" value="" />
+    <setting name="workingDirectory" value="$PROJECT_DIR$" />
+    <method />
+  </configuration>
+</component>

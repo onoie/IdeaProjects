@@ -1,12 +1,15 @@
-
 object HelloWorld {
-  def main (args: Array[String]){
-    println(createGreeting(args))
+  def main(args: Array[String]){
+    if(args.size == 0) {
+      val strs = Array("Hello", "World")
+      output(strs)
+    } else {
+      printf("Invalid args.")
+    }
   }
-  def createGreeting (args: Array[String]) = {
-    args.headOption match {
-      case Some(name) => "Hello" + name + "!"
-      case None => "HelloWorld!"
+  def output(strs: Array[String]):Unit = {
+    for(str <- strs) {
+      printf("%s ", str)
     }
   }
 }
